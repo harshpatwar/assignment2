@@ -1,0 +1,135 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 5px;
+    padding: 0px;
+}
+
+/* Apply styles */
+body {
+    font-family: monospace sans-serif;
+    color: black; 
+    background-color: lightyellow; 
+}
+body1
+{
+    font-family: cursive; 
+      text-align: right;
+     display: block;
+    text-decoration-style: solid;
+    color: black;
+     font-size: 18px;
+   
+}
+body1:hover
+{
+    display: block;
+    text-decoration-style: solid;
+    color: blue;
+    font-size: 22px;
+    
+}
+body2
+{
+    font-family: cursive; 
+
+     display: block;
+    text-decoration-style: solid;
+    color: black;
+     
+}
+body2:hover
+{
+    display: block;
+    text-decoration-style: solid;
+    color: blue;
+    font-size: 18px;
+    
+}
+header {
+    text-align: left;
+    background-color: lightsalmon; 
+    padding: 10px;
+    
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content:flex-start; /* Distribute content evenly */
+}
+
+.header-text {
+    text-align: left; /* Align text to the left */
+}
+
+.header-text h1 {
+    margin-bottom: 5px; /* Add spacing below the heading */
+}
+
+
+
+#about-me {
+    /*overflow: hidden; if i need overflow i can use this tag but i liked as it is */
+    background-color: lightgrey; 
+    color: black;
+    
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: lightsalmon; 
+    padding: 10px;
+}
+
+li {
+    color: darkblue; 
+    margin-left: 0;
+/* Removed margin between points */
+    
+    
+}
+
+h1, h2, h3 {
+    color: darkgreen; 
+}
+/* Contact Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}

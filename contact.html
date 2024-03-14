@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshpreet Singh - Contact Us</title>
+    <link rel="stylesheet" href="css/styleresume.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        /* Tooltip container */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -60px;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <body1>
+    <div>
+       <a href="index.html" class="tooltip">Home<span class="tooltiptext">Go to Home Page</span></a> | 
+        <a href="resume.html" class="tooltip">Resume<span class="tooltiptext">View Resume</span></a> | 
+        <a href="contact.html" class="tooltip">Contact Us<span class="tooltiptext">Reach Out to Us</span></a>
+    </div>
+    </body1>
+    <div class="header-content">
+        <div class="header-text">
+            <h1>Harshpreet Singh</h1>
+            <div id="body1">
+                <p>Calgary, AB T3J 3E5</p>
+                <p>Email: h.harshpreetsingh470@mybvc.ca</p>
+            </div>
+        </div>
+        <img src="images/profile.jpg" alt="Profile Photo" height="150">
+    </div>
+</header>
+
+<div id="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+        <label for="name" class="tooltip">Name:<span class="tooltiptext">Enter your name</span></label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email" class="tooltip">Email:<span class="tooltiptext">Enter your email address</span></label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone" class="tooltip">Phone Number:<span class="tooltiptext">Enter your phone number</span></label>
+        <input type="text" id="phone" name="phone" required><br><br> <!-- Phone number input -->
+        <label for="subject" class="tooltip">Subject:<span class="tooltiptext">Enter the subject of your message</span></label>
+        <input type="text" id="subject" name="subject" required><br><br>
+        <label for="message" class="tooltip">Message:<span class="tooltiptext">Enter your message</span></label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 Harshpreet Singh. All rights reserved.</p>
+</footer>
+<script>
+    function validateForm() {
+        var phone = document.getElementById("phone").value;
+        var regex = /^[0-9]+$/;
+        if (!phone.match(regex) || phone.length !== 10) {
+            alert("Please enter a valid 10-digit phone number");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
